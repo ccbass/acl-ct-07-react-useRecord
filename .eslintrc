@@ -12,7 +12,7 @@
     "browser": true,
     "jest": true
   },
-  "plugins": ["babel", "react"],
+  "plugins": ["babel", "react", "testing-library"],
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "no-console": "warn",
@@ -75,6 +75,10 @@
     "max-len": "error",
     "jsx-quotes": "error",
     "babel/no-invalid-this": 1,
-    "babel/semi": 0
+    "babel/semi": 0,
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "warn",
+    "testing-library/no-dom-import": "off"
   }
 }
